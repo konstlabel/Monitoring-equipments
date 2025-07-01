@@ -7,5 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MonitoringEquipmentsApplication {
     public static void main(String[] args) {
         SpringApplication.run(MonitoringEquipmentsApplication.class, args);
+        System.out.println("Hello, world!");
     }
 }
