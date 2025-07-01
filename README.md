@@ -31,8 +31,7 @@ src/
 │   │               │   ├── UserRepository.java
 │   │               │   ├── EquipmentRepository.java
 │   │               │   ├── ReservationRepository.java
-│   │               │   ├── StatusHistoryRepository.java
-│   │               │   └── MaintenanceRepository.java
+│   │               │   └── HistoryRepository.java
 │   │               ├── service/
 │   │               │   ├── UserService.java
 │   │               │   ├── EquipmentService.java
