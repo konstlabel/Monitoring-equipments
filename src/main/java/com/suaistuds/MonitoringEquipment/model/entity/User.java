@@ -1,4 +1,4 @@
-package model.entity;
+package com.suaistuds.MonitoringEquipment.model.entity;
 
 import lombok.Builder;
 import lombok.Data;
