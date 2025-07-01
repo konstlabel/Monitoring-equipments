@@ -17,21 +17,15 @@ src/
 │   │               │   └── CustomUserDetailsService.java
 │   │               ├── model/
 │   │               │   ├── dto/
-│   │               │   │   ├── AuthRequestDto.java
-│   │               │   │   ├── AuthResponseDto.java
-│   │               │   │   ├── EquipmentDto.java
-│   │               │   │   ├── ReservationDto.java
-│   │               │   │   ├── ReserveRequestDto.java
-│   │               │   │   ├── IssueDto.java
-│   │               │   │   ├── ReturnDto.java
-│   │               │   │   ├── MaintenanceDto.java
-│   │               │   │   └── UsageDto.java
+│   │               │       ├── UserDto.java
+│   │               │       ├── EquipmentDto.java
+│   │               │       ├── ReservationDto.java
+│   │               │       ├── HistoryDto.java
 │   │               │   └── entity/
 │   │               │       ├── User.java
 │   │               │       ├── Equipment.java
 │   │               │       ├── Reservation.java
-│   │               │       ├── StatusHistory.java
-│   │               │       ├── MaintenanceTask.java
+│   │               │       ├── History.java
 │   │               │       └── (при необходимости другие Enum’ы)
 │   │               ├── repository/
 │   │               │   ├── UserRepository.java
