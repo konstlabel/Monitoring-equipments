@@ -44,9 +44,9 @@ public class EquipmentDto {
 
             while (rs.next()) {
                 Equipment equipment = new Equipment();
-                equipment.setID(rs.getLong("id"));
+                equipment.setID(rs.getLong("ID"));
                 equipment.setName(rs.getString("name"));
-                equipment.setSerialNumber(rs.getString("serial_number"));
+                equipment.setSerialNumber(rs.getString("serialNumber"));
                 String statusStr = rs.getString("status");
                 equipment.setStatus(Status.valueOf(statusStr));
                 equipments.add(equipment);
@@ -58,7 +58,7 @@ public class EquipmentDto {
         return equipments;
     }
     public void delete(Equipment equipment) {
-        String query = "DELETE FROM \"Equipment\" WHERE id = ?";
+        String query = "DELETE FROM \"Equipment\" WHERE \"ID\" = ?";
 
         try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
              PreparedStatement stmt = conn.prepareStatement(query)) {
@@ -77,7 +77,7 @@ public class EquipmentDto {
         }
     }
     public void update(Equipment equipment) {
-        String query = "UPDATE \"Equipment\" SET name = ?, serial_number = ?, status = ?, type = ? WHERE id = ?";
+        String query = "UPDATE \"Equipment\" SET name = ?, \"serialNumber\" = ?, status = ?, type = ? WHERE \"ID\" = ?";
 
         try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
              PreparedStatement stmt = conn.prepareStatement(query)) {

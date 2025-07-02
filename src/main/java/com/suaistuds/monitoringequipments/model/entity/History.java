@@ -23,4 +23,5 @@ public class History {
     private Status status;
     @NonNull
     private LocalDateTime date;
+
 }
