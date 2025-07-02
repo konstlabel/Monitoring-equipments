@@ -19,4 +19,6 @@ public class Equipment {
     private String SerialNumber;
     @NotNull
     private Status Status;
+    @NotNull
+    private String Type;
 }
